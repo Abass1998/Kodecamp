@@ -6,6 +6,48 @@
 body{
     font-family: 'Overpass', sans-serif;
 }
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+.bar1 {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    transition: .5s;
+  }
+  .bar2 {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    transition: .5s;
+  }
+  .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    transition: .5s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .container{
+    display:none;
+  }  
+  
 .third-wrapper{
     /* border: 2px solid black; */
     background-color: #E2E6E9;
@@ -46,6 +88,7 @@ body{
 .first-section{
     /* border: 2px solid black; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 80%;
@@ -82,7 +125,7 @@ body{
 .top-wrapper-quick-service{
     /* border: 2px solid black; */
     width: 50%;
-    background-image: url(images/Image.png);
+    background-image: url(images/hero-section.png);
 }
 .another-container{
     /* border: 2px solid black; */
@@ -394,7 +437,7 @@ body{
     margin: 5rem 0 0 0;
     padding-bottom: 1%;
 }
-.get-in-touch{
+.get-in-ttouch{
     /* border: 2px solid black; */
     display: flex;
     width: 100%;
@@ -478,4 +521,346 @@ body{
      background-color: #00D289;
      border-radius: 50rem;
      width: 2rem;
+ }
+
+ /* service section begins  */
+ .service-firt-section{
+     /* border: 2px solid black; */
+     display: flex;
+     width: 70%;
+     margin: 0 auto;
+     margin-top: 5rem;
+ }
+ .our-service-image{
+     /* border: 2px solid black; */
+     width: 38%;
+     height: 50vh;
+     background-image: url(images/hero.png);
+     background-size: cover;
+ }
+ .service-list{
+     /* border: 2px solid black; */
+     background-color:#1E1B1B;
+     color: white;
+     width: 62%;
+     padding-top: 5%;
+     padding-left: 5%;
+ }
+ .distance{
+     margin-top: 2rem;
+     line-height: 2;
+     width: 90%;
+ }
+ .book{
+    cursor: pointer;
+     background: #FF6433;
+     width: 12rem;
+     padding: 1.8%;
+     text-align: center;
+ }
+ .auto-diagnostic-wrapper{
+     /* border: 2px solid black; */
+     display: flex;
+ }
+ .auto-diag{
+     /* border: 2px solid black; */
+     background-color: white;
+     border-radius: 3px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 12rem;
+     height: 23vh;
+     padding: 3%;
+     margin-top: 1.3rem;
+     margin-left: 1rem;
+ }
+ .x{
+    margin-top:0;
+ }
+ .auto-diag p{
+    /* border: 2px solid black; */
+    margin-top: .5rem;
+}
+.through-rich{
+    /* border: 2px solid black; */
+    padding: 2%;
+    border-radius: 3px;
+    background-color: white;
+}
+.through-rich-para{
+    /* border: 2px solid black; */
+    width: 70%;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.section-second{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.details-arrow{
+    /* border: 2px solid black; */
+    margin-left: .5rem;
+}
+.big-wrapper{
+    /* border: 2px solid black; */
+    margin-top: 4rem;
+    padding: 3%;
+    background: #F5F5F5;
+}
+.diagnostic-bg{
+    background-color:#FF6433;
+    color: white;
+}
+.checkmark{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+.checkmark p{
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+.section-third{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.wrapper-image{
+    /* border: 2px solid black; */
+    display: flex;
+}
+.wrapper-image div{
+    margin-left: 1rem;
+}
+.section-third-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.how-we-work{
+    /* border: 2px solid black; */
+    font-size: 2rem;
+    width: 70%;
+}
+.section-third-service{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.third-first{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 50%;
+}
+.third-first div{
+   margin-left: 1rem;
+} 
+.diagnose-car-problem{
+    /* border: 2px solid black; */
+    font-size: 2rem;
+    width: 80%;
+}
+.rich-attended{
+    /* border: 2px solid black; */
+    width: 80%;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+.service-a-book{
+    /* border: 2px solid black; */
+    color: white;
+    background: #FF6433;
+    width: 12rem;
+    padding: 3%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
+}
+.third-second{
+    /* border: 2px solid black; */
+    margin-left: 2rem;
+    width: 50%;
+}
+.car-image img{
+    /* border: 2px solid black; */
+    height: 48vh;
+    width: 100%;
+}
+.footer{
+    background-color:#1E1B1B;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    margin-top: 7rem;
+}
+.sub-footer{
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+.footer-link{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.get-in-touch{
+    margin-top: 2rem;
+    line-height: 1.5;
+    width: 70%;
+}
+.last-section{
+    background-color:#1E1B1B;
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+}
+.footer-link a{
+    margin-left: 1.8rem;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
+}
+ /* service section ends  */
+
+ @media screen and (max-width:900px){
+    .second-section{
+        flex-direction: column;
+    }
+    .second-section-one{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .top-wrapper-quick-service{
+        width: 100%;
+    }
+    .first-section-link{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        display: none;
+        width:100%;
+        margin-top: 3rem;
+        flex-direction:column;
+        justify-content: space-between;
+        height: 50vh;
+        padding: 6% 0;
+    }
+    .first-section-link a{
+       color: white;
+    } 
+    .first-section-link.show {
+        display: flex;
+      }
+
+    .third-section{
+        flex-direction: column;
+        width: 80%;
+    }
+    .we-are-taking{
+        width: 90%;
+    }
+    .get-aa-quote{
+        margin-top: 5rem;
+    }
+    .fourth-section{
+        flex-direction: column;
+    }
+    .top-wrapper{
+        display: flex;
+        margin-top: 2rem;
+    }
+    .clear-process h1{
+        width: 90%;
+    }
+    .clear-process p{
+        width: 90%;
+    }
+    .through{
+        width: 80%;
+    }
+    .what-we-offer{
+        text-align: left;
+        margin-left: 2rem;
+     }
+    .what-we-offer h1{
+       width: 100%;
+    }
+    .services{
+        flex-direction: column;
+        width: 100%;
+    }
+    .services-list{
+       margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .arrow{
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 2rem;
+    }
+    .get-in-ttouch{
+        flex-direction: column;
+    }
+    .touch-one{
+        width: 100%;
+        height: 30vh;
+        background-position: center right;
+        background-image: url("images/Image\ 1.png");
+        background-size: cover;  
+    }
+    .touch-two{
+        background-color: #FF6433;
+        color: white;
+        width: 100%;
+        height: 30vh; 
+        padding: 6%;
+    }
+    .touch-three{
+        width: 100%;
+        height: 30vh;
+        background-image: url("images/bg.png");
+    }
+    .why-choose-us{
+        flex-direction: column;
+    }
+    .item p{
+        margin-top: 0rem;
+        margin-left: 1rem;
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .seventh-first{
+        flex-direction: column;
+    }
+    .seventh-second{
+        flex-direction: column;
+    }
+    .brands-we-serve{
+        margin-top: 2rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        display:block;
+      }  
  }

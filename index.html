@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client First Template</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
@@ -16,10 +16,17 @@
         <div>
             <img src="images/Logo (1).png" alt="logo">
         </div>
-        <div class="first-section-link">
-            <div><a href="#">Home</a></div>
+
+        <div class="container" onclick="myFunction(this)" id="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div> 
+
+        <div class="first-section-link" id="nav-lu">
+            <div><a href="index.html">Home</a></div>
             <div><a href="#">About us</a></div>
-            <div><a href="#">Services</a></div>
+            <div><a href="services.html">Services</a></div>
             <div><a href="#">Blog</a></div>
             <div><a href="#">Contact</a></div>
             <div><img src="images/Line (2).png" alt="line"></div>
@@ -199,7 +206,7 @@
         </section>
     
         <section class="sixth-section">
-            <div class="get-in-touch">
+            <div class="get-in-ttouch">
                 <div class="touch-one"></div>
                 <div class="touch-two"> <h1>Get in touch with us for your service related query</h1></div>
                 <div class="touch-three"></div>
@@ -227,7 +234,7 @@
     </section>
     
     <section class="seventh-section">
-        <h1>Brands We Serve</h1>
+        <h1 class="brands-we-serve">Brands We Serve</h1>
         <div class="seventh-first">
             <div><img src="images/logo-8 1.png" alt="logo"></div>
             <div><img src="images/logo-6.png" alt="logo"></div>
@@ -243,5 +250,7 @@
             <div><img src="images/logo-1 1.png" alt="logo"></div>
         </div>
     </section>
+    <script src="app.js">
+    </script>
 </body>
-</html>
+</html> 
